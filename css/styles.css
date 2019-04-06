@@ -1,5 +1,5 @@
 * {
-  cursor: url("/Users/elsatuomi/Documents/RHUL 3rd year/coding_course/saycheese/Rochelle's work/cheese.cur"), default;
+  cursor: url("../images/cheese.cur"), default;
   margin: 0;
   padding: 0;
 }
@@ -10,12 +10,9 @@
   width: 300px;
 }
 
-
-
 .carousel
 {
-  height: 500px;
-  width: 900px;
+  position: relative;
 }
 
 .carousel-position {
@@ -64,8 +61,8 @@
   height: 300px;
   border: 1px solid #f1f1f1;
   /* grid-template-areas: "frontAndBack"; */
-  -webkit-perspective: 800;
-  perspective: 800;
+  /* -webkit-perspective: 800;
+  perspective: 800; */
   /* perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -109,7 +106,7 @@
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 30px;
+  width: 60px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -158,3 +155,22 @@
   color: #990000;
   border-color: currentColor;
 }
+
+@media only screen and (max-device-width: 600px) {
+   .col-md-4 {
+        padding-top: 5%;
+      }
+    #welcome-banner{
+      margin-top: 12%;
+    }
+
+    .carousel{
+      height: 40vh!important;
+      }
+    .carousel-inner{
+      height: 40vh!important;
+      }
+    #contact{
+      height: 40%;
+    }
+ }
